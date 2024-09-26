@@ -1,0 +1,88 @@
+.insidewrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border: 1px solid rgb(196, 196, 224);
+}
+.loginWrapper {
+  margin: 0px;
+  color: rgb(42, 15, 70);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.loginLeft {
+  padding: 20px;
+  height: 500px;
+  background-image: linear-gradient(
+      rgba(159, 136, 211, 0.6),
+      rgba(49, 30, 53, 0.6)
+    ),
+    url("https://img.freepik.com/free-photo/girlfriends-sitting-theirs-boyfriend-s-shoulder-making-fun_23-2147883642.jpg?w=740&t=st=1727277160~exp=1727277760~hmac=00c7f30b97397f753bdabe256132b5dcc648060d1374c3c428e4e7248e34123e");
+  background-position: center;
+  background-size: cover;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid rgb(196, 196, 224);
+}
+.loginRight {
+  flex: 1;
+  color: white;
+}
+.inputform {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 20px;
+  height: 500px;
+}
+input {
+  border: 0px;
+  border-bottom: 1px solid rgb(121, 112, 112);
+  height: 30px;
+  width: 100%;
+  background-color: rgb(31, 30, 30);
+}
+input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(228, 220, 220);
+}
+span {
+  color: rgb(248, 232, 5);
+  font-weight: bolder;
+}
+.button {
+  width: 40%;
+}
+h2 {
+  background-image: linear-gradient(
+    rgb(161, 83, 235, 0.4),
+    rgb(153, 40, 228.6)
+  );
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 40px 0px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+label {
+  width: 100%;
+  text-align: left;
+}
+.button {
+  background-image: linear-gradient(rgb(161, 83, 235, 0.4), rgb(153, 40, 228.6)),
+    url("___");
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
