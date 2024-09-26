@@ -8,7 +8,7 @@ function Register() {
       <div className="insidewrapper">
         <div className="loginRight">
           <form action="" className="inputform">
-            <h2>Register</h2>
+            <h2 className="h2">Register</h2>
             <br />
             <label htmlFor="email">Enter Username</label>
             <input type="email" name="username" required />

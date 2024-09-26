@@ -21,7 +21,7 @@ function Login() {
         </div>
         <div className="loginRight">
           <form action="" className="inputform">
-            <h2>Login</h2>
+            <h2 className="h2">Login</h2>
 
             <label htmlFor="email">Enter Email</label>
             <input type="email" name="email" required />

@@ -1,0 +1,36 @@
+.navbar {
+  border: 2px solid rgb(211, 194, 194);
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navitem {
+  padding: 0px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+i {
+  font-size: 27px;
+  padding: 0px 3px;
+  color: rgb(124, 50, 153);
+}
+li i {
+  padding: 0px 20px;
+}
+.profileImg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.profilenav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
