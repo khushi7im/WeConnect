@@ -1,4 +1,8 @@
 :root {
+  scrollbar-width: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -37,7 +41,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #f0eaea;
+  background-color: hsl(0, 3%, 38%);
   cursor: pointer;
   transition: border-color 0.25s;
 }

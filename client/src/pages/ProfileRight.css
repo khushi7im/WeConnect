@@ -1,0 +1,53 @@
+.info {
+  margin-top: 10px;
+  border: 2px solid rgb(216, 215, 215);
+  padding: 10px 10px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 3px rgb(199, 196, 196);
+}
+.info h3 {
+  padding: 10px 0px;
+}
+.info p {
+  color: rgb(107, 105, 105);
+  padding-top: 10px;
+}
+.rightprofile {
+  padding: 10px 0px;
+  /* padding-right: 20px; */
+  margin: 15px;
+}
+
+.userimg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+}
+
+.Followlist {
+  color: rgba(70, 32, 92, 0.712);
+  text-shadow: 3px 3px 4px tomato;
+  padding: 10px 5px;
+}
+.listfollowing {
+  border: 2px solid rgb(216, 215, 215);
+  box-shadow: 4px 4px 3px rgb(199, 196, 196);
+  margin-top: 10px;
+  padding: 0px 0px 15px 15px;
+  border-radius: 8px;
+}
+.listUser {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.following {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+.username {
+  color: black;
+}

@@ -1,0 +1,46 @@
+.PostWrap {
+  padding: 7px 10px;
+  display: flex;
+  /* align-items: start; */
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.postImg {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.postDP {
+  margin-right: 7px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+.post {
+  background-color: rgb(202, 192, 192);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 480px;
+  border-radius: 10px;
+  border: 1px solid rgba(180, 166, 194, 0.884);
+  padding: 10px;
+  box-shadow: 2px 2px 3px rgba(169, 151, 185, 0.74);
+}
+.likeComment {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 860px) {
+  .post {
+    width: 380px;
+  }
+}
