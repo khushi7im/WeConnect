@@ -1,13 +1,16 @@
 .navbar {
   margin: 0px;
   border: 2px solid rgb(211, 194, 194);
+  background-color: rgb(202, 192, 192);
   padding: 5px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 45px;
-  position: sticky;
-  /* width: 100%; */
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
 }
 .navitem {
   padding: 0px;

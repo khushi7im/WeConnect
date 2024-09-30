@@ -1,8 +1,15 @@
-import React from "react";
+import { useContext } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 function Login() {
+  const { login } = useContext(AuthContext);
+
+  const HandleLogin = () => {
+    login();
+  };
+
   return (
     <div className="loginWrapper">
       <div className="insidewrapper">
@@ -28,7 +35,9 @@ function Login() {
             <label htmlFor="pwd">Enter password</label>
             <input type="password" name="pwd" required />
 
-            <button className="button">Login</button>
+            <button className="button" onClick={HandleLogin}>
+              Login
+            </button>
           </form>
         </div>
       </div>
