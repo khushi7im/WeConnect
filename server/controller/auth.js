@@ -1,7 +1,6 @@
 import { DB } from "../Database/DB_connect.js";
 import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";
-import cookieParser from "cookie-parser";
 
 export const Register = (req, res) => {
   // Get input from user
@@ -33,10 +32,10 @@ export const Register = (req, res) => {
   });
 };
 
-export const Login = () => {
-  const q = "SELECT * from social WHERE username = ?";
+export const Login = (req, res) => {
+  const q = "SELECT * from social WHERE email = ?";
 
-  DB.query(q, [req.body.username], (err, data) => {
+  DB.query(q, [req.body.email], (err, data) => {
     if (err) return res.status(500).json(err);
     if (data.length === 0) return res.status(404).json("USER NOT FOUND");
 
@@ -60,4 +59,12 @@ export const Login = () => {
   });
 };
 
-export const Logout = () => {};
+export const Logout = (req, res) => {
+  res
+    .clearCookie("accessToken", {
+      secure: true,
+      sameSite: "none",
+    })
+    .status(200)
+    .json("User logged out !!!");
+};

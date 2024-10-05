@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
@@ -6,8 +6,24 @@ import { AuthContext } from "../context/AuthContext";
 function Login() {
   const { login } = useContext(AuthContext);
 
-  const HandleLogin = () => {
-    login();
+  const [input, setInput] = useState({
+    email: "",
+    password: "",
+  });
+
+  const HandleInput = (e) => {
+    setInput((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  // console.log("INPUTS ==", input);
+
+  const HandleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      await login(input);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -31,9 +47,14 @@ function Login() {
             <h2 className="h2">Login</h2>
 
             <label htmlFor="email">Enter Email</label>
-            <input type="email" name="email" required />
-            <label htmlFor="pwd">Enter password</label>
-            <input type="password" name="pwd" required />
+            <input type="email" name="email" onChange={HandleInput} required />
+            <label htmlFor="password">Enter password</label>
+            <input
+              type="password"
+              name="password"
+              onChange={HandleInput}
+              required
+            />
 
             <button className="button" onClick={HandleLogin}>
               Login

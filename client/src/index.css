@@ -41,7 +41,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: hsl(0, 3%, 38%);
+  background-color: hsl(177, 37%, 55%);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -51,4 +51,8 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 2px solid rgb(56, 245, 204);
+}
+input:focus,
+input:focus-visible {
+  background-color: rgba(201, 241, 236, 0.959);
 }
